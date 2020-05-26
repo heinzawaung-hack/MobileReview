@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="backgroundColor" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <JFXTextField fx:id="userNameField" focusColor="#eff1f5" labelFloat="true" layoutX="182.0" layoutY="108.0" prefHeight="41.0" prefWidth="210.0" promptText="User Name">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font></JFXTextField>
+      <JFXButton fx:id="signInButton" layoutX="307.0" layoutY="280.0" onAction="#SignInAction" prefHeight="33.0" prefWidth="85.0" text="SignIn">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="signUpButton" buttonType="RAISED" layoutX="493.0" layoutY="26.0" onAction="#signUpAction" prefHeight="33.0" prefWidth="85.0" text="SignUp" textFill="#ebe1e1">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font></JFXButton>
+      <JFXCheckBox fx:id="rememberMe" checkedColor="#131414" layoutX="182.0" layoutY="288.0" onAction="#rememberMeAction" text="Remember ME">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font></JFXCheckBox>
+      <Label layoutX="219.0" layoutY="325.0" text="Forgot Your Password?">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font></Label>
+      <ImageView fx:id="mobileImageView" fitHeight="50.0" fitWidth="36.0" layoutX="260.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" />
+      <JFXPasswordField fx:id="passwordField" focusColor="#ededee" layoutX="182.0" layoutY="193.0" prefHeight="41.0" prefWidth="210.0" promptText="Password">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font></JFXPasswordField>
+      <Label layoutX="233.0" layoutY="68.0" text="Mobile Review">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font></Label>
+      <ImageView fx:id="UserNameImage" fitHeight="41.0" fitWidth="36.0" layoutX="130.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="passwordImage" fitHeight="41.0" fitWidth="36.0" layoutX="130.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="progressImage" fitHeight="16.0" fitWidth="178.0" layoutX="218.0" layoutY="352.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

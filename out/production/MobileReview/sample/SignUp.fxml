@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="backTransact" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SignUpController">
+   <children>
+      <JFXTextField fx:id="userNameField" focusColor="#e8e8eb" labelFloat="true" layoutX="194.0" layoutY="42.0" prefHeight="37.0" prefWidth="194.0" promptText="User Name">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font></JFXTextField>
+      <JFXPasswordField fx:id="passwordField" focusColor="#fffdfd" labelFloat="true" layoutX="194.0" layoutY="127.0" prefHeight="37.0" prefWidth="194.0" promptText="Password">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font></JFXPasswordField>
+      <JFXRadioButton fx:id="maleRadio" layoutX="194.0" layoutY="208.0" selected="true" text="Male">
+
+         <toggleGroup>
+            <ToggleGroup fx:id="GenderGroup" />
+         </toggleGroup>
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="femaleRadio" layoutX="276.0" layoutY="208.0" text="Female" toggleGroup="$GenderGroup">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font></JFXRadioButton>
+      <JFXTextField fx:id="countryField" focusColor="#fffefe" labelFloat="true" layoutX="194.0" layoutY="257.0" prefHeight="37.0" prefWidth="194.0" promptText="Enter Your Country">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font></JFXTextField>
+      <JFXButton fx:id="signUpButton" buttonType="RAISED" layoutX="303.0" layoutY="334.0" onAction="#signUpAction" prefHeight="30.0" prefWidth="85.0" text="Sign Up">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="loginButton" buttonType="RAISED" layoutX="489.0" layoutY="14.0" onAction="#logInAction" prefHeight="30.0" prefWidth="85.0" text="Log In">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font></JFXButton>
+   </children>
+</AnchorPane>

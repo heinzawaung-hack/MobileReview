@@ -1,0 +1,15 @@
+.backgroundColor{
+    -fx-background-color : linear-gradient(to right,#fffbd5, #b20a2c);
+}
+
+.backTransact{
+    -fx-background-color : linear-gradient(to right,#003973, #E5E5BE);
+}
+
+.homePage{
+    -fx-background-color : linear-gradient(to bottom,#dc2430 , #7b4397);
+}
+
+.WhistList{
+    -fx-background-color : linear-gradient(to right,#833ab4, #fd1d1d , #fcb045);
+}
